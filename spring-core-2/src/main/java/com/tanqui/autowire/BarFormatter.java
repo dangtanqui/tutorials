@@ -2,7 +2,9 @@ package com.tanqui.autowire;
 
 import org.springframework.stereotype.Component;
 
-@Component("barFormatter")
+@FormatterType("Bar")
+@Component
+//@Component("barFormatter")
 public class BarFormatter implements Formatter{
 
     @Override
