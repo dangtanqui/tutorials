@@ -1,21 +1,24 @@
 package com.tanqui.autowire;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
 public class FooService {
 
-//    @Autowired
-    private FooFormatter fooFormatter;
+    @Autowired
+    @Qualifier("fooFormatter")
+    private Formatter formatter;
+//    private FooFormatter fooFormatter;
 
 //    @Autowired(required = false)
 //    private FooDAO dataAccessor;
 
-    @Autowired
-    public FooService(FooFormatter fooFormatter) {
-        this.fooFormatter = fooFormatter;
-    }
+//    @Autowired
+//    public FooService(FooFormatter fooFormatter) {
+//        this.fooFormatter = fooFormatter;
+//    }
 
 //    @Autowired
 //    public void setFooFormatter(FooFormatter fooFormatter) {
@@ -23,6 +26,6 @@ public class FooService {
 //    }
 
     public String doStuff() {
-        return fooFormatter.format();
+        return formatter.format();
     }
 }
