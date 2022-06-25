@@ -9,6 +9,9 @@ public class FooService {
 //    @Autowired
     private FooFormatter fooFormatter;
 
+//    @Autowired(required = false)
+//    private FooDAO dataAccessor;
+
     @Autowired
     public FooService(FooFormatter fooFormatter) {
         this.fooFormatter = fooFormatter;
