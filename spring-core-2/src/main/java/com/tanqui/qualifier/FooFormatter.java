@@ -1,8 +1,13 @@
 package com.tanqui.qualifier;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
-@Component("fooFormatter")
+@Component
+@Primary
+//@Qualifier("fooFormatter")
+//@Component("fooFormatter")
 public class FooFormatter implements Formatter {
 
     @Override

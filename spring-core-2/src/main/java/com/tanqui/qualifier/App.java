@@ -9,5 +9,8 @@ public class App {
         AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig.class);
         FooService fooService = ctx.getBean(FooService.class);
         System.out.println(fooService.doStuff());
+
+        Employee employee = ctx.getBean(Employee.class);
+        System.out.println(employee.getName());
     }
 }

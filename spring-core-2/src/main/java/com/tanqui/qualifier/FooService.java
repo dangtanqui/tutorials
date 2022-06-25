@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 public class FooService {
 
     @Autowired
-    @Qualifier("fooFormatter")
+//    @Qualifier("fooFormatter")
     private Formatter formatter;
 
     public String doStuff() {

@@ -1,8 +1,11 @@
 package com.tanqui.qualifier;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-@Component("barFormatter")
+@Component
+//@Qualifier("barFormatter")
+//@Component("barFormatter")
 public class BarFormatter implements Formatter {
 
     @Override
