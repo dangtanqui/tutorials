@@ -28,16 +28,16 @@ public class FooService {
 //    }
 
 //    @Autowired
+
 //    public void setFormatter(@FormatterType("Foo") Formatter formatter) {
 //        this.formatter = formatter;
 //    }
 
-//    @Autowired
 //    public void setFooFormatter(FooFormatter fooFormatter) {
 //        this.fooFormatter = fooFormatter;
 //    }
 
     public String doStuff() {
-        return fooFormatter.format();
+        return formatter.format();
     }
 }

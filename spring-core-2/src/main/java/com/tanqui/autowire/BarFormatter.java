@@ -5,6 +5,7 @@ import org.springframework.stereotype.Component;
 @FormatterType("Bar")
 @Component
 //@Component("barFormatter")
+
 public class BarFormatter implements Formatter{
 
     @Override
