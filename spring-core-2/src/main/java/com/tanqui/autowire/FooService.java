@@ -8,12 +8,19 @@ import org.springframework.stereotype.Component;
 public class FooService {
 
     @Autowired
-    @Qualifier("fooFormatter")
-    private Formatter formatter;
+//    @Qualifier("fooFormatter")
+//    @FormatterType("Foo")
+//    private Formatter formatter;
+    private Formatter fooFormatter;
 //    private FooFormatter fooFormatter;
 
 //    @Autowired(required = false)
 //    private FooDAO dataAccessor;
+
+//    @Autowired
+//    public FooService(@FormatterType("Foo") Formatter formatter) {
+//        this.formatter = formatter;
+//    }
 
 //    @Autowired
 //    public FooService(FooFormatter fooFormatter) {
@@ -21,6 +28,11 @@ public class FooService {
 //    }
 
 //    @Autowired
+
+//    public void setFormatter(@FormatterType("Foo") Formatter formatter) {
+//        this.formatter = formatter;
+//    }
+
 //    public void setFooFormatter(FooFormatter fooFormatter) {
 //        this.fooFormatter = fooFormatter;
 //    }

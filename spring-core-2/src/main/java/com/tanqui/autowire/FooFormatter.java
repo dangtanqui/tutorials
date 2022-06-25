@@ -2,7 +2,10 @@ package com.tanqui.autowire;
 
 import org.springframework.stereotype.Component;
 
-@Component("fooFormatter")
+@FormatterType("Foo")
+@Component
+//@Component("fooFormatter")
+
 public class FooFormatter implements Formatter {
 
     @Override
