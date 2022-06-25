@@ -9,9 +9,9 @@ public class FooService {
 
     @Autowired
 //    @Qualifier("fooFormatter")
-    private Formatter formatter;
+    private Formatter fooFormatter;
 
     public String doStuff() {
-        return formatter.format();
+        return fooFormatter.format();
     }
 }

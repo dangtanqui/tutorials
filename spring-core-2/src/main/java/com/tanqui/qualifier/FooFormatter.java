@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
-@Primary
+//@Primary
 //@Qualifier("fooFormatter")
 //@Component("fooFormatter")
 public class FooFormatter implements Formatter {
