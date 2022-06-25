@@ -38,6 +38,6 @@ public class FooService {
 //    }
 
     public String doStuff() {
-        return formatter.format();
+        return fooFormatter.format();
     }
 }
