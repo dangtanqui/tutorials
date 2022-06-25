@@ -11,6 +11,10 @@ public class App {
 
         Employee employee = context.getBean(Employee.class);
         System.out.println(employee.getName());
+
+        ManagerService service = context.getBean(ManagerService.class);
+        Manager manager = service.getManager();
+        System.out.println(manager.getManagerName());
     }
     
 }
