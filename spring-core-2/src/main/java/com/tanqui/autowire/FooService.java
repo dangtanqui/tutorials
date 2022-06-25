@@ -10,9 +10,14 @@ public class FooService {
     private FooFormatter fooFormatter;
 
     @Autowired
-    public void setFooFormatter(FooFormatter fooFormatter) {
+    public FooService(FooFormatter fooFormatter) {
         this.fooFormatter = fooFormatter;
     }
+
+//    @Autowired
+//    public void setFooFormatter(FooFormatter fooFormatter) {
+//        this.fooFormatter = fooFormatter;
+//    }
 
     public String doStuff() {
         return fooFormatter.format();
