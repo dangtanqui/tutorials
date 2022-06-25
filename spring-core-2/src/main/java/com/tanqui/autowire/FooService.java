@@ -9,24 +9,28 @@ public class FooService {
 
     @Autowired
 //    @Qualifier("fooFormatter")
-    @FormatterType("Foo")
-    private Formatter formatter;
+//    @FormatterType("Foo")
+//    private Formatter formatter;
+    private Formatter fooFormatter;
 //    private FooFormatter fooFormatter;
 
 //    @Autowired(required = false)
 //    private FooDAO dataAccessor;
-    @Autowired
-    public FooService(@FormatterType("Foo") Formatter formatter) {
-        this.formatter = formatter;
-    }
+
+//    @Autowired
+//    public FooService(@FormatterType("Foo") Formatter formatter) {
+//        this.formatter = formatter;
+//    }
+
 //    @Autowired
 //    public FooService(FooFormatter fooFormatter) {
 //        this.fooFormatter = fooFormatter;
 //    }
-    @Autowired
-    public void setFormatter(@FormatterType("Foo") Formatter formatter) {
-        this.formatter = formatter;
-    }
+
+//    @Autowired
+//    public void setFormatter(@FormatterType("Foo") Formatter formatter) {
+//        this.formatter = formatter;
+//    }
 
 //    @Autowired
 //    public void setFooFormatter(FooFormatter fooFormatter) {
@@ -34,6 +38,6 @@ public class FooService {
 //    }
 
     public String doStuff() {
-        return formatter.format();
+        return fooFormatter.format();
     }
 }
