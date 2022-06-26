@@ -1,6 +1,6 @@
-package com.tanqui.springframework.first_project.repository;
+package com.tanqui.springframework.spring_why_to_choose.repository;
 
-import com.tanqui.springframework.first_project.entity.Employee;
+import com.tanqui.springframework.spring_why_to_choose.entity.Employee;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;

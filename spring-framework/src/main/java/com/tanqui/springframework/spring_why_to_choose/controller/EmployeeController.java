@@ -1,7 +1,7 @@
-package com.tanqui.springframework.first_project.controller;
+package com.tanqui.springframework.spring_why_to_choose.controller;
 
-import com.tanqui.springframework.first_project.entity.Employee;
-import com.tanqui.springframework.first_project.repository.EmployeeRepository;
+import com.tanqui.springframework.spring_why_to_choose.entity.Employee;
+import com.tanqui.springframework.spring_why_to_choose.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

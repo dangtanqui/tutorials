@@ -1,4 +1,4 @@
-package com.tanqui.springframework.first_project.entity;
+package com.tanqui.springframework.spring_why_to_choose.entity;
 
 import com.sun.istack.NotNull;
 

@@ -1,7 +1,7 @@
-package com.tanqui.springframework.first_project;
+package com.tanqui.springframework.spring_why_to_choose;
 
-import com.tanqui.springframework.first_project.entity.Employee;
-import com.tanqui.springframework.first_project.repository.EmployeeRepository;
+import com.tanqui.springframework.spring_why_to_choose.entity.Employee;
+import com.tanqui.springframework.spring_why_to_choose.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
