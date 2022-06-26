@@ -6,6 +6,6 @@ import org.springframework.context.annotation.PropertySource;
 
 @Configuration
 @ComponentScan("com.tanqui.profiles")
-@PropertySource({"classpath:application.properties", "classpath:application-dev.properties", "classpath:application-prod.properties"})
+@PropertySource({"classpath:application.properties", "classpath:application-${spring.profiles.active}.properties"})
 public class SpringProfilesConfig {
 }
