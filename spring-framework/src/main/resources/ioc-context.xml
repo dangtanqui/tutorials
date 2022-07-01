@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<!--    <bean-->
+<!--        id="item"-->
+<!--        class="com.tanqui.springframework.inversion_of_control_and_dependency_injection.ItemImpl1"-->
+<!--    >-->
+<!--        <constructor-arg type="String" index="0" name="name" value="Hello" />-->
+<!--    </bean>-->
+
+    <!-- Constructor injection -->
+
+<!--    <bean-->
+<!--        id="xml-store-by-constructor"-->
+<!--        class="com.tanqui.springframework.inversion_of_control_and_dependency_injection.Store"-->
+<!--    >-->
+<!--        <constructor-arg type="Item" index="0" name="item" ref="item" />-->
+<!--    </bean>-->
+
+    <!-- Setter injection -->
+
+<!--    <bean-->
+<!--        id="xml-store-by-setter"-->
+<!--        class="com.tanqui.springframework.inversion_of_control_and_dependency_injection.Store"-->
+<!--    >-->
+<!--        <property name="item" ref="item" />-->
+<!--    </bean>-->
+
+    <!-- Autowired injection -->
+
+<!--    <bean-->
+<!--        id="xml-store-by-autowired-name"-->
+<!--        class="com.tanqui.springframework.inversion_of_control_and_dependency_injection.Store"-->
+<!--        autowire="byName"-->
+<!--    />-->
+
+    <!-- Lazy instantiation -->
+
+<!--    <bean-->
+<!--        id="item-lazy"-->
+<!--        class="com.tanqui.springframework.inversion_of_control_and_dependency_injection.ItemImpl1"-->
+<!--        lazy-init="true"-->
+<!--    >-->
+<!--        <constructor-arg type="String" index="0" name="name" value="Hello" />-->
+<!--    </bean>-->
+
+<!--    <bean-->
+<!--        id="xml-store-by-setter-lazy"-->
+<!--        class="com.tanqui.springframework.inversion_of_control_and_dependency_injection.Store"-->
+<!--    >-->
+<!--        <property name="item" ref="item-lazy" />-->
+<!--    </bean>-->
+
+</beans>
