@@ -1,0 +1,28 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="indexService" class="com.tanqui.springdi.spring_xml_injection.IndexService" />
+
+<!--    <bean id="indexApp" class="com.tanqui.springdi.spring_xml_injection.IndexApp" >-->
+<!--        <property name="service" ref="indexService" />-->
+<!--    </bean>-->
+
+<!--    <bean id="indexApp" class="com.tanqui.springdi.spring_xml_injection.IndexApp">-->
+<!--        <constructor-arg ref="indexService" />-->
+<!--    </bean>-->
+
+    <bean
+        id="messageService"
+        class="com.tanqui.springdi.spring_xml_injection.StaticServiceFactory"
+        factory-method="getService"
+    >
+        <constructor-arg value="1" />
+    </bean>
+
+    <bean id="indexApp" class="com.tanqui.springdi.spring_xml_injection.IndexApp">
+        <property name="service" ref="messageService" />
+    </bean>
+
+</beans>
